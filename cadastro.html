@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário demonstrativo de cadastro de voluntários e apoiadores da ONG fictícia Raízes do Amanhã.">
+  <meta name="theme-color" content="#176c55">
+  <title>Cadastro | Raízes do Amanhã</title>
+  <link rel="icon" type="image/svg+xml" href="imagens/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+  <div class="aviso-academico">ONG fictícia — site demonstrativo criado para atividade acadêmica</div>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Raízes do Amanhã, página inicial">
+        <img src="imagens/logo.svg" alt="" width="46" height="46">
+        <span><strong>Raízes do Amanhã</strong><small>Comunidade e transformação</small></span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="cadastro.html" class="menu-destaque" aria-current="page">Participe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-destaque" aria-labelledby="titulo-principal">
+      <div class="container">
+        <p class="eyebrow">Faça parte dessa ideia</p>
+        <h1 id="titulo-principal">Cadastro de participantes</h1>
+        <p class="lead">Preencha o formulário de exemplo para conhecer como seria um cadastro de voluntários e apoiadores de uma ONG.</p>
+      </div>
+    </section>
+
+    <section class="faixa" aria-labelledby="titulo-formulario">
+      <div class="container cadastro-layout">
+        <div class="cartao formulario">
+          <h2 id="titulo-formulario">Seus dados</h2>
+          <p class="muted">Campos marcados com <span class="obrigatorio" aria-hidden="true">*</span> são obrigatórios. Nenhum dado será enviado ou salvo.</p>
+          <form id="formulario-cadastro" action="#" method="post">
+            <fieldset>
+              <legend>1. Dados pessoais</legend>
+              <div class="campos">
+                <div class="campo campo-total">
+                  <label for="nome">Nome completo <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" autocomplete="name" minlength="3" maxlength="100" required>
+                </div>
+                <div class="campo">
+                  <label for="cpf">CPF <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" inputmode="numeric" maxlength="14" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" title="Informe o CPF no formato 000.000.000-00" aria-describedby="ajuda-cpf" required>
+                  <span class="ajuda" id="ajuda-cpf">Máscara de formato; não verifica se o CPF existe.</span>
+                </div>
+                <div class="campo">
+                  <label for="nascimento">Data de nascimento <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="date" id="nascimento" name="nascimento" autocomplete="bday" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>2. Contato</legend>
+              <div class="campos">
+                <div class="campo campo-total">
+                  <label for="email">E-mail <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" maxlength="120" required>
+                </div>
+                <div class="campo campo-total">
+                  <label for="telefone">Telefone com DDD <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321" autocomplete="tel-national" inputmode="numeric" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" title="Informe o telefone no formato (11) 98765-4321" required>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>3. Endereço</legend>
+              <div class="campos">
+                <div class="campo campo-total">
+                  <label for="endereco">Endereço <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="endereco" name="endereco" placeholder="Rua, número e complemento" autocomplete="street-address" maxlength="140" required>
+                </div>
+                <div class="campo">
+                  <label for="cep">CEP <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cep" name="cep" placeholder="00000-000" autocomplete="postal-code" inputmode="numeric" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" title="Informe o CEP no formato 00000-000" required>
+                </div>
+                <div class="campo">
+                  <label for="cidade">Cidade <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" autocomplete="address-level2" maxlength="80" required>
+                </div>
+                <div class="campo campo-total">
+                  <label for="estado">Estado <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <select id="estado" name="estado" autocomplete="address-level1" required>
+                    <option value="">Selecione seu estado</option>
+                    <option value="AC">Acre (AC)</option><option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option><option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option><option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option><option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option><option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option><option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option><option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option><option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option><option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option><option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option><option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option><option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option><option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>4. Sua participação</legend>
+              <div class="campos">
+                <div class="campo campo-total">
+                  <label for="interesse">Como gostaria de ajudar? <span class="obrigatorio" aria-hidden="true">*</span></label>
+                  <select id="interesse" name="interesse" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="voluntariado">Quero ser voluntário</option>
+                    <option value="doacao">Tenho interesse em doar</option>
+                    <option value="informacoes">Quero conhecer os projetos</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <div class="confirmacao">
+              <input type="checkbox" id="ciencia" name="ciencia" required>
+              <label for="ciencia">Entendo que este é um formulário acadêmico e que nenhum dado será enviado ou armazenado. <span class="obrigatorio" aria-hidden="true">*</span></label>
+            </div>
+            <button type="submit" class="botao botao-primario">Simular cadastro</button>
+            <p id="resposta-formulario" class="resposta-formulario" role="status" aria-live="polite" tabindex="-1" hidden></p>
+          </form>
+        </div>
+
+        <aside class="aside-ajuda" aria-label="Informações sobre a participação">
+          <picture class="pagina-imagem">
+            <source srcset="imagens/cadastro.webp" type="image/webp">
+            <img src="imagens/cadastro.png" alt="Ilustração de um formulário preenchido com marca de confirmação" width="900" height="610" loading="lazy">
+          </picture>
+          <div class="cartao">
+            <h2>Por que participar?</h2>
+            <p>As organizações sociais podem reunir pessoas para realizar projetos e compartilhar resultados com a comunidade.</p>
+            <ul>
+              <li>Participe de ações voluntárias.</li>
+              <li>Conheça iniciativas sociais.</li>
+              <li>Saiba como apoiar uma causa.</li>
+            </ul>
+            <p class="ajuda">Nesta demonstração, a validação ocorre no navegador. Não existe banco de dados nem envio de cadastro.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>© <span data-ano>2026</span> Raízes do Amanhã.<br>Projeto acadêmico fictício. Não recebe cadastros ou doações reais.</p>
+      <nav class="rodape-links" aria-label="Links do rodapé">
+        <a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

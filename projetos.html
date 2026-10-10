@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos sociais fictícios da Raízes do Amanhã e descubra como participar como voluntário ou apoiador.">
+  <meta name="theme-color" content="#176c55">
+  <title>Projetos sociais | Raízes do Amanhã</title>
+  <link rel="icon" type="image/svg+xml" href="imagens/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo principal</a>
+  <div class="aviso-academico">ONG fictícia — site demonstrativo criado para atividade acadêmica</div>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html" aria-label="Raízes do Amanhã, página inicial">
+        <img src="imagens/logo.svg" alt="" width="46" height="46">
+        <span><strong>Raízes do Amanhã</strong><small>Comunidade e transformação</small></span>
+      </a>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html" aria-current="page">Projetos</a>
+        <a href="cadastro.html" class="menu-destaque">Participe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="pagina-destaque" aria-labelledby="titulo-principal">
+      <div class="container pagina-grid">
+        <div>
+          <p class="eyebrow">Projetos sociais</p>
+          <h1 id="titulo-principal">Transformando boas ideias em ações.</h1>
+          <p class="lead">Conheça nossas iniciativas demonstrativas e descubra como o voluntariado e o apoio da comunidade podem fazer a diferença.</p>
+        </div>
+        <picture class="pagina-imagem">
+          <source srcset="imagens/comunidade.webp" type="image/webp">
+          <img src="imagens/comunidade.png" alt="Ilustração representando uma ação de solidariedade comunitária" width="900" height="610">
+        </picture>
+      </div>
+    </section>
+
+    <section class="faixa" id="iniciativas" aria-labelledby="titulo-projetos">
+      <div class="container">
+        <div class="titulo-secao">
+          <p class="eyebrow">Conheça as iniciativas</p>
+          <h2 id="titulo-projetos">Escolha uma causa para apoiar</h2>
+          <p>Os projetos abaixo são exemplos acadêmicos, não campanhas reais em andamento.</p>
+        </div>
+        <div class="filtro-linha">
+          <label for="filtro-projetos">Filtrar por categoria:</label>
+          <select id="filtro-projetos" name="categoria">
+            <option value="todos">Todas as categorias</option>
+            <option value="educacao">Educação</option>
+            <option value="ambiente">Meio ambiente</option>
+            <option value="comunidade">Comunidade</option>
+          </select>
+        </div>
+        <p id="resultado-filtro" class="sr-only" role="status" aria-live="polite">3 projetos encontrados.</p>
+        <div class="grade-3">
+          <article class="cartao projeto-card cartao-projeto" id="biblioteca" data-categoria="educacao">
+            <picture>
+              <source srcset="imagens/educacao.webp" type="image/webp">
+              <img src="imagens/educacao.png" alt="Ilustração de crianças com livro aberto" width="900" height="610" loading="lazy">
+            </picture>
+            <div class="card-conteudo">
+              <span class="rotulo">Educação</span><h3>Biblioteca Aberta</h3>
+              <p>Atividades de incentivo à leitura, troca de livros e reforço escolar. Voluntários poderiam ajudar na organização de oficinas.</p>
+              <a class="link-seta" href="cadastro.html?interesse=voluntariado">Quero ser voluntário →</a>
+            </div>
+          </article>
+          <article class="cartao projeto-card cartao-projeto" id="horta" data-categoria="ambiente">
+            <picture>
+              <source srcset="imagens/meio-ambiente.webp" type="image/webp">
+              <img src="imagens/meio-ambiente.png" alt="Ilustração de uma horta com plantas verdes" width="900" height="610" loading="lazy">
+            </picture>
+            <div class="card-conteudo">
+              <span class="rotulo">Meio ambiente</span><h3>Horta Coletiva</h3>
+              <p>Ações de plantio, oficinas sobre cultivo e cuidados com os espaços verdes. Os participantes poderiam contribuir com tempo e materiais.</p>
+              <a class="link-seta" href="cadastro.html?interesse=voluntariado">Quero ser voluntário →</a>
+            </div>
+          </article>
+          <article class="cartao projeto-card cartao-projeto" id="rede" data-categoria="comunidade">
+            <picture>
+              <source srcset="imagens/comunidade.webp" type="image/webp">
+              <img src="imagens/comunidade.png" alt="Ilustração de alimentos organizados para uma campanha solidária" width="900" height="610" loading="lazy">
+            </picture>
+            <div class="card-conteudo">
+              <span class="rotulo">Comunidade</span><h3>Rede Solidária</h3>
+              <p>Campanhas educativas e arrecadações comunitárias. O apoio poderia acontecer por meio de trabalho voluntário ou doação de itens.</p>
+              <a class="link-seta" href="cadastro.html?interesse=doacao">Tenho interesse em ajudar →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa faixa-clara" aria-labelledby="titulo-ajuda">
+      <div class="container grade-2">
+        <article>
+          <p class="eyebrow">Voluntariado</p>
+          <h2 id="titulo-ajuda">Como ser voluntário?</h2>
+          <div class="passo"><span class="numero">1</span><div><h3>Conheça os projetos</h3><p>Leia as propostas e encontre a iniciativa que combina com você.</p></div></div>
+          <div class="passo"><span class="numero">2</span><div><h3>Preencha o cadastro</h3><p>Informe seus dados e indique seu interesse em voluntariado.</p></div></div>
+          <div class="passo"><span class="numero">3</span><div><h3>Participe das ações</h3><p>Em uma ONG real, a equipe entraria em contato para combinar as próximas etapas.</p></div></div>
+          <div class="acoes"><a class="botao botao-primario" href="cadastro.html?interesse=voluntariado">Cadastro de voluntário</a></div>
+        </article>
+        <article>
+          <p class="eyebrow">Apoie uma causa</p>
+          <h2>Como ajudar com doações?</h2>
+          <div class="passo"><span class="numero">1</span><div><h3>Escolha a iniciativa</h3><p>Veja os projetos e identifique a causa que deseja apoiar.</p></div></div>
+          <div class="passo"><span class="numero">2</span><div><h3>Informe seu interesse</h3><p>O formulário de demonstração possui a opção de apoio ou doação.</p></div></div>
+          <div class="passo"><span class="numero">3</span><div><h3>Acompanhe a transparência</h3><p>ONGs reais devem informar seus canais oficiais e prestar contas dos recursos.</p></div></div>
+          <div class="nota"><strong>Atenção:</strong> este trabalho acadêmico não coleta dinheiro, não recebe pagamentos e não registra doações.</div>
+          <div class="acoes"><a class="botao botao-secundario" href="cadastro.html?interesse=doacao">Demonstrar interesse em doar</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <p>© <span data-ano>2026</span> Raízes do Amanhã.<br>Projeto acadêmico fictício. Não recebe cadastros ou doações reais.</p>
+      <nav class="rodape-links" aria-label="Links do rodapé">
+        <a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="cadastro.html">Cadastro</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

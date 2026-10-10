@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="610" viewBox="0 0 900 610" role="img"><defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e9f7ef"/><stop offset="100%" stop-color="#d5eee9"/></linearGradient>
+  <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f9d78b"/><stop offset="100%" stop-color="#f5aa71"/></linearGradient>
+ </defs><rect width="100%" height="100%" rx="44" fill="url(#bg)"/><circle cx="775" cy="117" r="65" fill="url(#sun)" opacity=".73"/>
+<path d="M0 446Q200 399 412 455T900 432V610H0Z" fill="#9dcea9"/><path d="M0 518Q228 473 460 515T900 489V610H0Z" fill="#71bb93"/>
+<rect x="168" y="407" width="559" height="110" rx="17" fill="#b98057"/><path d="M183 433h528m-528 34h528" stroke="#995c40" stroke-width="9"/>
+<path d="M289 436V255m0 0q-84-95-115-19 47 75 115 19Zm0 0q89-105 128-29-44 81-128 29Z" stroke="#2a7b57" stroke-width="14" fill="#4ea879" stroke-linejoin="round"/>
+<path d="M474 443V217m0 0q-100-108-140-14 58 77 140 14Zm0 0q109-122 157-31-51 108-157 31Z" stroke="#2a7b57" stroke-width="16" fill="#268e69" stroke-linejoin="round"/>
+<path d="M638 435V293m0 0q-68-73-95-13 32 59 95 13Zm0 0q74-83 101-16-36 59-101 16Z" stroke="#2a7b57" stroke-width="13" fill="#60b689"/>
+<path d="M112 391c18-31 41-29 59 0m-64 29c25-25 49-21 72 0" stroke="#25825f" stroke-width="10" fill="none"/>
+</svg>
